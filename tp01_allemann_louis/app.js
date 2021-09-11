@@ -1,5 +1,5 @@
-function myFunction()
-{
-    $("#h01").html("Hello jQuery")
+function submitMainForm(event) {
+    $("password").val
 }
-$(document).ready(myFunction);
+
+$("#main-form").on("submit", submitMainForm);
