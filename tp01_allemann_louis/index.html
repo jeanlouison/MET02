@@ -16,8 +16,8 @@
 </head>
 <body>
     <div class="main-block d-flex flex-column mx-auto p-3">
-        <h1 id="h01">Formulaire</h1>
-        <form class="main-form d-flex flex-column">
+        <h1>Formulaire</h1>
+        <form id="main-form" class="main-form d-flex flex-column">
             <!-- Nom -->
             <div class="d-flex flex-column mb-3">
                 <label for="lastname" class="form-label mb-0">Nom</label>
@@ -71,22 +71,22 @@
             <!-- Identifiant -->
             <div class="d-flex flex-column mb-3">
                 <label for="login" class="form-label mb-0">Identifiant</label>
-                <input type="text" name="login" class="form-control"/>
+                <input type="text" name="login" class="form-control" required/>
             </div>
             <!-- Mot de passe -->
             <div class="d-flex flex-column mb-3">
                 <label for="password" class="form-label mb-0">Mot de passe</label>
-                <input type="password" name="password" id="password" class="form-control"/>
+                <input type="password" name="password" id="password" class="form-control" required/>
             </div>
             <!-- Confirmation du mot de passe -->
             <div class="d-flex flex-column mb-3">
                 <label for="confirmpassword" class="form-label mb-0">Confirmation du mot de passe</label>
-                <input type="password" name="confirmpassword" id="confirmpassword" class="form-control"/>
+                <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" required/>
             </div>
 
             <!-- Validation -->
             <div class="d-flex flex-column align-items-end">
-                <button type="submit" class="btn btn-primary mt-3">Valider et confirmer</button>
+                <button id="main-form-btn" class="btn btn-primary mt-3">Valider et confirmer</button>
             </div>
         </form>
     </div>
